@@ -1,0 +1,330 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juandelcid.ace2p2.MainWindow">
+
+    <TextView
+        android:id="@+id/tvInfConex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo"
+        android:text="@string/msg_NoConex"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvInfo"
+        android:layout_below="@+id/tvInfConex">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control del vehiculo."
+                android:textColor="@color/negro"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnManual"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView26"
+                android:text="Manual."
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnAutomatic"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnManual"
+                android:text="Automatico."
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView26"
+                android:layout_toRightOf="@+id/btnManual"
+                android:backgroundTint="@color/verde"
+                android:text="Start."
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnDropP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView26"
+                android:layout_toRightOf="@+id/btnStart"
+                android:backgroundTint="#c9ba33"
+                android:text="Drop Pack."
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView26"
+                android:layout_toRightOf="@+id/btnDropP"
+                android:backgroundTint="@color/rojo"
+                android:text="Stop."
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerVertical="true"
+            android:background="@color/azulclaro">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <ImageButton
+                        android:id="@+id/imgBtnUp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@android:drawable/arrow_up_float" />
+
+
+                    <ImageButton
+                        android:id="@+id/imgBtnLeft"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/imgBtnUp"
+                        android:layout_toLeftOf="@+id/imgBtnUp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@android:drawable/ic_media_previous" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnDown"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/imgBtnLeft"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@android:drawable/arrow_down_float" />
+
+                    <ImageButton
+                        android:id="@+id/imgBtnRight"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/imgBtnUp"
+                        android:layout_toRightOf="@+id/imgBtnUp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@android:drawable/ic_media_next" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/relativeLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/amarillo"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese tiempo espera:"
+                android:textColor="@color/negro"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtTime"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfo2"
+                android:hint="## seg"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSendT"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvInfo2"
+                android:layout_toRightOf="@+id/txtTime"
+                android:text="Send time."
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvInfo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTime"
+                android:text="Distancia de parada:"
+                android:textColor="@color/negro"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtDistStp"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfo3"
+                android:hint="## cm"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSendD"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvInfo3"
+                android:layout_toRightOf="@+id/txtDistStp"
+                android:text="Send data."
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/acua"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvInfo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Distancia recorrida:"
+                android:textColor="@color/grayEnd"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvInfoDist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfo4"
+                android:layout_centerHorizontal="true"
+                android:text="00 m."
+                android:textColor="@color/blanco"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInfo6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfoDist"
+                android:layout_centerHorizontal="true"
+                android:text="Obstaculos Evadidos:"
+                android:textColor="@color/grayEnd"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvInfObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfo6"
+                android:layout_centerHorizontal="true"
+                android:text=" # #"
+                android:textColor="@color/blanco"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtTest"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfObj"
+                android:textColorHint="@color/blanco"
+                android:hint="## code"
+                android:inputType="number"
+                android:textColor="@color/blanco"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvInfObj"
+                android:layout_toRightOf="@+id/txtTest"
+                android:text="Send."
+                android:textAllCaps="false" />
+
+
+        </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Data received..."
+        android:textColor="@color/negro"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/tvDato"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Info about data sent."
+        android:textColor="@color/negro"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

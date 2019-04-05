@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">ACE2P2</string>
+    <string name="msg_SendData">Send data?</string>
+    <string name="msg_Ok">Ok.</string>
+    <string name="msg_Cancel">Cancel.</string>
+    <string name="msg_NoConex">No Conectado.</string>
+    <string name="msg_SiConex">Conectado.</string>
+    <string name="msg_VenP">Arquitectura de computadores y ensambladores 2.</string>
+    <string name="msg_Conex">Conectar.</string>
+    <string name="msg_CambP">Cambiar Dispositivo.</string>
+
+
+    <!-- PARA DRAG AND DROP -->
+    <string name="cancel">"  Cancelar  "</string>
+    <string name="save">"  Guardar  "</string>
+    <string name="add">Agregar</string>
+    <string name="add_dummy_notes">Add dummy notes</string>
+    <string name="reset_all_items">Delete ALL items</string>
+    <string name="reset_to_default_items">Reset to default items</string>
+    <string name="note_name">"Note name: "</string>
+    <string name="note_details">"Details: "</string>
+
+    <string name="hello_world">Encendiendo un led</string>
+    <string name="menu_settings">Opciones</string>
+    <string name="title_activity_main">Led</string>
+    <string name="bluetooth">Conectarse a</string>
+    <string name="On">Apagar</string>
+    <string name="Off">Encender</string>
+    <string name="vacio"></string>
+    <string name="Desconexion">Desconectar</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <!--  <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>  -->
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">escaneando dispositivos...</string>
+    <string name="select_device">Seleccione el dispositivo a conectar.</string>
+    <string name="none_paired">Ningun dispositivo emparejado.</string>
+    <string name="none_found">No se encontraron dispositivos.</string>
+    <string name="title_paired_devices">Dispositivos Emparejados</string>
+    <string name="title_other_devices">Otros Dispositivos Disponibles</string>
+    <string name="button_scan">Escanear Dispositivos.</string>
+
+    <!-- ALGUNOS EFECTOS QUE SE APLICAN A LOS MENSAJE -->
+    <string-array name="msg_mode">
+        <item>Manual.</item>
+        <item>Automatic.</item>
+    </string-array>
+
+
+
+
+
+
+    <string name="msg_DesBtnEnvHr">Seleccionar un horario para enviar a la pantalla led.</string>
+
+</resources>

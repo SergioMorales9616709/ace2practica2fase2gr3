@@ -1,0 +1,18 @@
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Conexion"
+        android:title="@string/bluetooth"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/m_scan"
+        android:title="@string/msg_CambP"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+    </item>
+
+
+</menu>
